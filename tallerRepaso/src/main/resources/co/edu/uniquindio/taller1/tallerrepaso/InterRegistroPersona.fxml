@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="InterInicio" prefHeight="346.0" prefWidth="449.0" snapToPixel="false" style="-fx-background-color: #323638;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.taller1.tallerrepaso.ViewControlerAgregarCliente">
+   <children>
+      <TextField fx:id="TxtF_Nombre" layoutX="57.0" layoutY="34.0" />
+      <TextField fx:id="TxtF_Apellido" layoutX="252.0" layoutY="34.0" />
+      <Text fx:id="Txt_Nombre" fill="WHITE" layoutX="57.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombres">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="Txt_Apellidos" fill="WHITE" layoutX="251.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TxtF_Documento" layoutX="57.0" layoutY="88.0" />
+      <TextField fx:id="TxtF_Direccion" layoutX="252.0" layoutY="88.0" />
+      <Text fx:id="Txt_Direccion" fill="WHITE" layoutX="250.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="ComboBTipoPers" editable="true" layoutX="56.0" layoutY="141.0" onAction="#selectTipoCliente" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="TxtF_Correo" layoutX="252.0" layoutY="141.0" />
+      <Text fx:id="Txt_correo" fill="WHITE" layoutX="253.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TxtF_Nit" layoutX="250.0" layoutY="196.0" />
+      <Text fx:id="Txt_Fecha" fill="WHITE" layoutX="58.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de nacimiento">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="DateNacimiento" layoutX="56.0" layoutY="196.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text fx:id="Txt_Tipo_Persona" fill="WHITE" layoutX="57.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo persona">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="Txt_nit" fill="WHITE" layoutX="250.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIT">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="BtnRegistrarPersona" layoutX="333.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnregistraPersona" style="-fx-background-color: #bf7f37;" text="Registrar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="TxtF_Telefono" layoutX="56.0" layoutY="251.0" />
+      <Text fx:id="Txt_Telefono" fill="WHITE" layoutX="58.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fx:id="Txt_Documento" fill="WHITE" layoutX="58.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Documento">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="BtnActualizarPersona" layoutX="241.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnActualizarClientes" style="-fx-background-color: #bf7f37;" text="Actualizar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button id="regresar" fx:id="BtnRegresar" layoutX="57.0" layoutY="299.0" mnemonicParsing="false" onAction="#btnRegresarPrincipal" style="-fx-background-color: #bf7f37;" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text id="mensaje" fx:id="mensaje" fill="WHITE" layoutX="300.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

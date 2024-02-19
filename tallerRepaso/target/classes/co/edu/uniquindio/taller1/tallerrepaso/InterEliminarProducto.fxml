@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="InterInicio" prefHeight="346.0" prefWidth="449.0" snapToPixel="false" style="-fx-background-color: #323638;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.taller1.tallerrepaso.ViewControlerEliminarProductos">
+   <children>
+      <Button fx:id="BtnEliminarClient" layoutX="139.0" layoutY="250.0" mnemonicParsing="false" onAction="#eliminarProducto" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: #bf7f37;" text="Eliminar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="#bcbcbc" layoutX="72.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminar" wrappingWidth="183.0">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Text>
+      <Text fill="#c97720" layoutX="255.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="producto">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Text>
+      <TextField fx:id="TxtEliminarUser" layoutX="139.0" layoutY="173.0" prefHeight="25.0" prefWidth="183.0" />
+      <Text fill="WHITE" layoutX="139.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código" textAlignment="CENTER" wrappingWidth="183.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="41.0" fitWidth="39.0" layoutX="27.0" layoutY="68.0">
+         <image>
+            <Image url="@../../Downloads/warning-black-triangular-signal-with-exclamation-sign-inside_icon-icons.com_64273.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="26.0" layoutX="170.0" layoutY="141.0">
+         <image>
+            <Image url="@../../Downloads/product_icon_238428.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="BtnREgresarPrincipal" layoutX="139.0" layoutY="290.0" mnemonicParsing="false" onAction="#RegresarPrincipal" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: #bf7f37;" text="Regresar" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Text fx:id="mensaje" fill="WHITE" layoutX="139.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="183.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
